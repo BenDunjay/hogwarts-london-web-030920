@@ -13,19 +13,19 @@ class App extends Component {
     hidePig: false
   }
 
-  // hidePig = pigName => {
-  //   let newPigs = []
+  hidePig = pigName => {
+    let newPigs = []
     
-  //   this.state.allPigs.map(pig => pig.name === pigName ? pig  : newPigs.push(pig) )
+    this.state.allPigs.map(pig => pig.name === pigName ? pig  : newPigs.push(pig) )
 
-  //   this.setState({allPigs: newPigs})
-  // }
-
-  hidePig = pig => {
-   
-    this.setState({ hiddenPigs: [...this.state.hiddenPigs, pig],
-                    allPigs: })
+    this.setState({allPigs: newPigs})
   }
+
+  // hidePig = pig => {
+   
+  //   this.setState({ hiddenPigs: [...this.state.hiddenPigs, pig],
+  //                   allPigs: })
+  // }  was in the process of trying to correct the above method!
 
   allPigs = () => {
     this.setState({
